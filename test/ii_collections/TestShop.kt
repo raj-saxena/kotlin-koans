@@ -63,7 +63,7 @@ val shop = shop("jb test shop",
 
 )
 
-val customers: Map<String, Customer> = shop.customers.fold(hashMapOf<String, Customer>(), {
+val customers: Map<String, Customer> = shop.customers.fold(hashMapOf(), {
     map, customer ->
     map[customer.name] = customer
     map
