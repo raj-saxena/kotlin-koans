@@ -2,10 +2,11 @@ package v_builders
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import java.util.*
+import java.util.HashMap
 
 class N37StringAndMapBuildersKtTest {
-    @Test fun testBuildMap() {
+    @Test
+    fun testBuildMap() {
         val map = task37()
         val expected = HashMap<Int, String>()
         for (i in 0..10) {

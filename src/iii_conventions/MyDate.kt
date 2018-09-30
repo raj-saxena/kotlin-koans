@@ -34,7 +34,6 @@ class DateRange(private val start: MyDate, private val endInclusive: MyDate) : I
             var current = start
             override fun hasNext(): Boolean = current <= endInclusive
 
-
             override fun next(): MyDate {
                 val nextDay = current
                 current = current.nextDay()
